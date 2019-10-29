@@ -10,6 +10,9 @@ for (let i = 0; i < 5; i++) {
     avatars.push(new avatarModule.Avatar(slumpNamn, age));
 }
 
+// Sortera avatarerna efter ålder.
+
+
 // DOM
 document.addEventListener("DOMContentLoaded", () => {
     var main = document.getElementsByTagName("main");
@@ -17,10 +20,10 @@ document.addEventListener("DOMContentLoaded", () => {
     function renderAvatars(typ) {
         let avatarsToRender = avatars;
 
-        if ((typ != undefined) && (Number.isInteger(typ))) {
+        if (typ != "all") {
             // Rendera endast typen
             avatarsToRender = avatars.filter((avatar) => {
-                return avatar.typ == typ;
+                return avatar.type == typ;
             })
         }
 
@@ -50,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Reagera på förändringar.
     select[0].addEventListener("change", (e) => {
+        console.log(e)
         renderAvatars(e.target.value);
     })
 
