@@ -81,5 +81,10 @@ document.addEventListener("DOMContentLoaded", () => {
         avatars.push(newAvatar);
         sortera();
         renderAvatars("all");
+
+        // Städa i input-fälten.
+        inputs[0].value = "";
+        inputs[1].value = "";
+
     })
 })
