@@ -1,5 +1,5 @@
 body {
-    background: #efe;
+    background: #eee;
 }
 
 header {
@@ -16,21 +16,22 @@ header div {
 main {
     width: 80%;
     margin: 1em auto;
-    display: flex;
-    flex-direction: column;
-    background: #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5px;
+    background: #eee;
 }
 
 
 
 main div {
-    flex: 0 1 auto;
     padding: .5em;
     margin: 4px 0;
     border: 3px solid black;
     border-radius: 8px;
     box-shadow: 2px 2px 17px gray;
     display: flex;
+    background: white;
 }
 
 section {
@@ -39,6 +40,6 @@ section {
 }
 
 img {
-    width: 100px;
+    width: 85px;
     height: auto;
 }
