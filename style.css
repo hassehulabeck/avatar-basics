@@ -1,5 +1,7 @@
 body {
     background: #eee;
+    font-family: 'Staatliches',
+        cursive;
 }
 
 header {
@@ -10,7 +12,16 @@ header {
 header div {
     flex: 0 1 auto;
     padding: 1em 2em;
+}
 
+header div:last-child {
+    font-family: 'Staatliches', cursive;
+    font-size: 4em;
+    color: darkorchid;
+    text-shadow: 2px 2px 1px white,
+        2px -2px 1px white,
+        -2px 2px 1px white,
+        -2px -2px 1px white;
 }
 
 main {
@@ -32,6 +43,11 @@ main div {
     box-shadow: 2px 2px 17px gray;
     display: flex;
     background: white;
+}
+
+input {
+    display: block;
+    margin-bottom: 1em;
 }
 
 section {
