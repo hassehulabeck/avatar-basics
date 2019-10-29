@@ -5,7 +5,7 @@ function Avatar(name, age) {
     this.age = age;
     let slump = Math.floor(Math.random() * avatarTypes.length);
     this.type = avatarTypes[slump];
-    this.image = `https://avatars.dicebear.com/v2/${this.type}/${this.name}-${this.age}`;
+    this.image = `https://avatars.dicebear.com/v2/${this.type}/${this.name}-${this.age}.svg`;
 }
 
 export {

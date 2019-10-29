@@ -1,8 +1,13 @@
 import * as avatarModule from './modules/avatar.mjs';
 let avatars = [];
+let names = [
+    "Ann", "Bruno", "Cairo", "Des", "Eve", "Franz", "Ghazim", "Hu", "Isak", "Jens", "Khaled", "Liam", "Mou", "Nana", "Opera", "Patszy", "Qvintus", "Raheem", "Sterling", "Tomas", "Urban", "Verner", "Werner", "Xerxes", "Ylva", "Åda", "Älva", "Örjan"
+];
 
 for (let i = 0; i < 5; i++) {
-    avatars.push(new avatarModule.Avatar);
+    let age = Math.floor(Math.random() * 25);
+    let slumpNamn = names[Math.floor(Math.random() * names.length)]
+    avatars.push(new avatarModule.Avatar(slumpNamn, age));
 }
 
 // DOM
