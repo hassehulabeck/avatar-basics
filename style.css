@@ -2,14 +2,26 @@ body {
     background: #efe;
 }
 
+header {
+    display: flex;
+    background: orange;
+}
+
+header div {
+    flex: 0 1 auto;
+    padding: 1em 2em;
+
+}
+
 main {
     width: 80%;
     margin: 1em auto;
     display: flex;
     flex-direction: column;
     background: #fff;
-    ;
 }
+
+
 
 main div {
     flex: 0 1 auto;
@@ -18,6 +30,12 @@ main div {
     border: 3px solid black;
     border-radius: 8px;
     box-shadow: 2px 2px 17px gray;
+    display: flex;
+}
+
+section {
+    flex: 0 1 auto;
+    padding-right: 1em;
 }
 
 img {

@@ -11,11 +11,17 @@ for (let i = 0; i < 5; i++) {
 }
 
 // Sortera avatarerna efter ålder.
-
+avatars.sort((a, b) => {
+    if (a.age > b.age)
+        return -1;
+    else
+        return 1;
+})
 
 // DOM
 document.addEventListener("DOMContentLoaded", () => {
     var main = document.getElementsByTagName("main");
+    renderAvatars("all");
 
     function renderAvatars(typ) {
         let avatarsToRender = avatars;
@@ -32,9 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
         avatarsToRender.forEach((avatar) => {
             let newDiv = document.createElement("div");
-            newDiv.innerHTML = `<img src="${avatar.image}">
-        <h1>${avatar.name}</h1>
-        <p>Ålder: ${avatar.age}</p>
+            newDiv.innerHTML = `
+                <section>
+                    <img src="${avatar.image}">
+                </section>
+                <section>
+                    <h1>${avatar.name}</h1>
+                    <p>Ålder: ${avatar.age}</p>
+                </section>
         `;
             main[0].appendChild(newDiv);
         })
@@ -56,8 +67,4 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log(e)
         renderAvatars(e.target.value);
     })
-
-    //Orginalrendera
-    if (main[0].innerHTML == "")
-        renderAvatars();
 })
