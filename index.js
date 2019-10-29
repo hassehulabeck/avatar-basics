@@ -11,16 +11,21 @@ for (let i = 0; i < 5; i++) {
 }
 
 // Sortera avatarerna efter ålder.
-avatars.sort((a, b) => {
-    if (a.age > b.age)
-        return -1;
-    else
-        return 1;
-})
+function sortera() {
+    avatars.sort((a, b) => {
+        if (a.age > b.age)
+            return -1;
+        else
+            return 1;
+    })
+}
 
 // DOM
 document.addEventListener("DOMContentLoaded", () => {
     var main = document.getElementsByTagName("main");
+
+    // Initiera, sortera och rendera.
+    sortera();
     renderAvatars("all");
 
     function renderAvatars(typ) {
@@ -66,5 +71,15 @@ document.addEventListener("DOMContentLoaded", () => {
     select[0].addEventListener("change", (e) => {
         console.log(e)
         renderAvatars(e.target.value);
+    })
+
+    // Skapa avatar.
+    var knapp = document.getElementsByTagName("button");
+    var inputs = document.getElementsByTagName("input");
+    knapp[0].addEventListener("click", () => {
+        let newAvatar = new avatarModule.Avatar(inputs[0].value, inputs[1].value);
+        avatars.push(newAvatar);
+        sortera();
+        renderAvatars("all");
     })
 })
