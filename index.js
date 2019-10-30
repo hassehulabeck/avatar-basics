@@ -1,12 +1,16 @@
 import * as avatarModule from './modules/avatar.mjs';
 let avatars = [];
-let names = [
-    "Ann", "Bruno", "Cairo", "Des", "Eve", "Franz", "Ghazim", "Hu", "Isak", "Jens", "Khaled", "Liam", "Mou", "Nana", "Opera", "Patszy", "Qvintus", "Raheem", "Sterling", "Tomas", "Urban", "Verner", "Werner", "Xerxes", "Ylva", "Åda", "Älva", "Örjan"
+let nameParts = [
+    "an", "ro", "os", "de", "ve", "pa", "ha", "hu", "sa", "en", "led", "ia", "ou", "na", "per", "ats", "vin", "he", "ter", "tom", "ban", "ere", "ne", "zo", "va", "da", "lm", "rj", "mm", "nn", "o", "e", "av", "st", "ch", "il", "su", "bo", "a", "ky", "th", "se", "or", " "
 ];
 
 for (let i = 0; i < 5; i++) {
-    let age = Math.floor(Math.random() * 25);
-    let slumpNamn = names[Math.floor(Math.random() * names.length)]
+    let age = Math.ceil(Math.random() * 25);
+    let antal = Math.floor(Math.random() * 3) + 2;
+    let slumpNamn = "";
+    for (let j = 0; j < antal; j++) {
+        slumpNamn += nameParts[Math.floor(Math.random() * nameParts.length)]
+    }
     avatars.push(new avatarModule.Avatar(slumpNamn, age));
 }
 
