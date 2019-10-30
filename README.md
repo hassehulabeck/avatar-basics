@@ -22,7 +22,7 @@ Lämpligen skriver sedan en av er ihop webbsidan, medan den andra skapar en cons
 
 1. git add (den eller de filer som ska ingå)
 2. git commit -m “Meddelande
-> relates # NUMMER PÅ ISSUEN”
+   > relates # NUMMER PÅ ISSUEN”
 3. git checkout master  
 4. git pull origin master (Eftersom du vill ha ner eventuella ändringar gjorda under tiden du arbetat) 
 5. git checkout DIN-BRANCH
