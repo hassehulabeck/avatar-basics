@@ -1,7 +1,8 @@
 import * as avatarModule from './modules/avatar.mjs';
 let avatars = [];
 let nameParts = [
-    "an", "ro", "os", "de", "ve", "pa", "ha", "hu", "sa", "en", "led", "ia", "ou", "na", "per", "ats", "vin", "he", "ter", "tom", "ban", "ere", "ne", "zo", "va", "da", "lm", "rj", "mm", "nn", "o", "e", "av", "st", "ch", "il", "su", "bo", "a", "ky", "th", "se", "or", " "
+    "an", "ro", "os", "de", "ve", "pa", "ha", "hu", "sa", "en", "led", "ia", "ou", "na", "per", "ats", "vin", "he", "ter", "tom", "ban", "ere", "ne", "zo", "va", "da", "lm", "rj", "mm", "nn", "o", "e", "av", "st", "ch", "il", "su", "bo", "a", "ky", "th", "se", "or", "ur", "ce", "li", "of", "be", "go", "du",
+    " ", " ", " "
 ];
 
 for (let i = 0; i < 5; i++) {
