@@ -37,11 +37,16 @@ Lämpligen skriver sedan en av er ihop webbsidan, medan den andra skapar en cons
 * Enbart visa avatarer av en viss typ
 ### Resurser 
 https://avatars.dicebear.com/
+
 https://github.com/foundersandcoders/git-workflow-workshop-for-two 
 
 Avatarbilderna (och deras motsvarande url) kan se ut så här:
 https://avatars.dicebear.com/v2/gridy/hans-andersson.svg
+
 https://avatars.dicebear.com/v2/male/hans.svg
+
 https://avatars.dicebear.com/v2/female/1243433434243234hans.svg
+
 https://avatars.dicebear.com/v2/bottts/54-hans.svg
+
 https://avatars.dicebear.com/v2/avataaars/hans-the-great.svg
