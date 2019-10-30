@@ -40,7 +40,8 @@ https://avatars.dicebear.com/
 
 https://github.com/foundersandcoders/git-workflow-workshop-for-two 
 
-Avatarbilderna (och deras motsvarande url) kan se ut så här:
+#### Avatarbilderna (och deras motsvarande url) kan se ut så här:
+
 https://avatars.dicebear.com/v2/gridy/hans-andersson.svg
 
 https://avatars.dicebear.com/v2/male/hans.svg
